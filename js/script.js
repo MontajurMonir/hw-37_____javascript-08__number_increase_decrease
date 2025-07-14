@@ -8,13 +8,20 @@ plusBtn.addEventListener("click", ()=>{
     let count = countNumber.innerHTML;
     if(count < 10){
         countNumber.innerHTML++;
+        
+    }
+    else{
+        plusBtn.setAttribute("disabled",true)
     }
 
 })
 minusBtn.addEventListener("click", ()=>{
     let count = countNumber.innerHTML;
-    if(count > -2){
+    if(count > 0){
         countNumber.innerHTML--;
+    }
+        else{
+        minusBtn.setAttribute("disabled",true)
     }
 
 })
